@@ -1439,7 +1439,7 @@ color: var(--basic-backgound-white);
 	color:var(--basic-backgound-black);
 }
 .feedback-form-name input[type="text"],
-.feedback-form-email input[type="e-mail"]{
+.feedback-form-email input[type="email"]{
 	padding-left: 20px;
 }
 .feedback-form-textarea{
