@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+   <meta charset="utf-8">
+   <title>HTML Academy: Девайс</title>
+   <link rel="icon" href="favicon.ico?v=4">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <link href="css/normalize.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+   <script src="js/script.js"></script>
+</head>
+<body id="body" class="page-body">
+      <header class="main-header">
+        <div class="main-logo">
+          <a href=""><img src="img/logo.svg" width="163" height="45"></a>
+        </div>
+        <div class="active-block">
+          <div class="seach-form">
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <input onclick="seachActive()" type="text" class="seach-form-input" name="seach-form-input" autocomplete="off" placeholder="Поиск по сайту">
+              <button id="seach-form-button" class="seach-form-button">Найти</button>
+              <div id="seach-form-line" class="seach-form-line"></div>
+            </form>
+          </div>
+          <div class="active-block-container">
+            <div class="active-block-elements element-user"><a href=""><img src="img/icon_user_header.svg" width="14" height="14">Войти</a></div>
+        <div class="active-block-elements element-compare"><a href=""><img src="img/icon_chart_header.svg" width="13" height="14">Сравнить</a></div>
+        <div class="active-block-elements element-cart"><a href=""><img src="img/icon_cart_header.svg" width="10" height="10">Корзина</a></div>
+          </div>
+        </div>
+        <nav class="main-menu">
+          <div class="menu-catalog" onmouseover="showMenu()" onmouseout="closeMenu()">
+            <a href="catalog.html">каталог товаров</a>
+            <img src="img/cross.png" width="15" height="15">
+          </div>
+            <ul class="main-menu-list">
+              <li class="main-menu-elements"><a href="blank.html">доставка</a></li>
+              <li class="main-menu-elements"><a href="blank.html">гарантия</a></li>    
+              <li class="main-menu-elements"><a href="blank.html">контакты</a></li>         
+            </ul>
+        </nav>
+        <div class="submenu" id="submenu" onmouseover="showMenu()" onmouseout="closeMenu()">
+          <ul class="submenu-main-list">
+            <li><a href="catalog.html">Виртуальная реальность</a></li>
+            <li><a href="catalog.html">Моноподы для селфи</a></li>
+            <li><a href="catalog.html">Экшн-камеры</a></li>
+          </ul>
+          <ul class="submenu-main-list">
+            <li><a href="catalog.html">Фитнес-браслеты</a></li>
+            <li><a href="catalog.html">Умные часы</a></li>
+          </ul>
+          <ul class="submenu-main-list">
+            <li><a href="catalog.html">Квадрокоптер</a></li>
+          </ul>
+        </div>
+      </header>
+   <main class="main">
+    <h1>Такой страницы нет!</h1>
+   </main>
+   <footer class="footer-container">
+      <div class="main-footer">
+        <div class="footer-column-1">
+          <div class="footer-img">
+            <a href=""> <img src="img/-e-logo.png"></a>
+          </div>
+          <div class="footer-active-block-container">
+              <div class="footer-active-block-elements footer-active-1"><a href=""><img src="img/icon_user.svg" width="13" height="14">Войти</a></div>
+          <div class="footer-active-block-elements footer-active-2"><a href=""><img src="img/icon_chart.svg" width="14" height="14">Сравнить</a></div>
+          <div class="footer-active-block-elements footer-active-3"><a href=""><img src="img/icon_cart.svg" width="10" height="10">Корзина</a></div>
+        </div>
+          </div>
+          <div class="footer-column-2">
+            <div class="adress"><p>г. Москва, ул. Строителей, 15</p></div>
+            <ul class="footer-menu">
+              <li class="footer-menu-elements"><a href="blank.html">доставка</a></li>
+              <li class="footer-menu-elements"><a href="blank.html">гарантия</a></li>
+              <li class="footer-menu-elements"><a href="blank.html">контакты</a></li>
+            </ul>
+            <div class="tel">
+              <p>Тел.:<a href="tel:+74954959595"> +7 (495) 495-95-95</a></p>
+            </div>
+          </div>
+          <div class="footer-column-3">
+            <div class="footer-line"></div>
+            <ul class="social">
+              <li><a href=""> <img src="img/icon_facebook.svg"></a></li>
+              <li><a href=""> <img src="img/icon_instagram.svg"></a></li>
+              <li><a href=""> <img src="img/icon_twitter.svg"></a></li>
+            </ul>
+            <div class="creator"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg"></a></div>
+          </div>
+        </div>
+      </div>
+   </footer>  
+   <div class="full-map" id="full-map">
+      <img src="img/map-big.png" width="994" height="539">
+      <button onclick="closeMap()" class="button-close"></button>
+   </div>
+   <div class="feedback-form-container" id="feedback-form-container">
+    <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="feedback-form-name">
+      <p>Ваше имя:</p>
+      <input class="feedback-form-name-input" type="text" name="name" placeholder="Имя Фамилия">
+      </div>
+      <div class="feedback-form-email">
+      <p>Ваш e-mail:</p>  
+      <input class="feedback-form-name-input" type="e-mail" name="email" placeholder="email@example.com">
+      </div>
+      <div class="feedback-form-textarea"> 
+      <p>Текст письма:</p>  
+      <textarea class="feedback-form-name-textarea" name="message" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="button-feedback">отправить</button>
+    </form>
+    <button onclick="closeFeedbackForm()"class="button-close"></button>
+   </div>
+</body>
