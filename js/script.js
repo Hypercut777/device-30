@@ -4,14 +4,6 @@ function seachActive() {
   seachActiveLine.style.display = "inline-block";
   seachActiveButton.style.display = "inline-block";
 }
-function showMenu() {
-  var showMenuActive = document.getElementById("submenu");
-  showMenuActive.style.display = "flex";
-}
-function closeMenu() {
-  var closeMenuActive = document.getElementById("submenu");
-  closeMenuActive.style.display = "none";
-}
 function slideActive1() {
   var x = document.getElementById("slide-1");
   var y = document.getElementById("slide-2");
@@ -75,4 +67,10 @@ function openFeedbackForm(){
 function closeFeedbackForm(){
   var x = document.getElementById("feedback-form-container");
   x.style.display = "none";
+}
+function closeSeach(){
+  var seachActiveLine = document.getElementById("seach-form-line");
+  var seachActiveButton = document.getElementById("seach-form-button");
+  seachActiveLine.style.display = "none";
+  seachActiveButton.style.display = "none";
 }
