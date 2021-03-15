@@ -88,13 +88,17 @@ a{
 img{
   	max-width: 100%;
 }
-li{
-	list-style: none;
+.page{
+	height: 100%;
 }
 .page-body{
 	width: 100%;
 	margin: 0 auto;
 	padding-top: 20px;
+	min-height: 100%;
+  	display: grid;
+  	grid-template-rows: min-content 1fr min-content;
+  	align-content: start;
 }
 .main-header{
 	width: 1160px;
@@ -138,6 +142,12 @@ li{
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 }
+.main-menu:hover + .submenu{
+    display: flex;
+}
+.submenu:hover{
+    display: flex;
+}
 .menu-catalog{
 	position: relative;
 }
@@ -147,6 +157,7 @@ li{
 	bottom: 4px;
 }
 .main-menu-list{
+	list-style: none;
 	padding: 0;
 	margin: 0;
 	display: grid;
@@ -237,6 +248,7 @@ li{
 	margin-left: 60px;
 }
 .submenu-main-list{
+	list-style: none;
 	font-family: 'gilroyextrabold', sans-serif;
 	margin: 0;
 	padding: 0;
@@ -462,6 +474,7 @@ li{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 38px;
 }
 .main-catalog-img:hover{
 	background:var(--special-yellow-dark);
@@ -472,16 +485,24 @@ li{
 .main-catalog-img:focus img{
 	opacity: 0.3;
 }
+.main-catalog-img:focus ~ .main-catalog-elements-text{
+	opacity: 0.3;
+}
 .main-catalog-elements:not(:last-child){
 	margin-right: 40px;
 }
-.main-catalog-elements p{max-width: 160px;
+.main-catalog-elements-text{
+	margin:0;
+	padding: 0;
+	max-width: 160px;
 	color: var(--basic-backgound-black);
 	text-align: left;
-	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
 	letter-spacing: 0.05em;
+}
+.main-catalog-elements-text:focus{
+	opacity: 0.3;
 }
 .info-container{
 	box-sizing: border-box;
@@ -664,11 +685,13 @@ li{
 }
 .full-map{
 	display: none;
-	position: absolute;
+	position: fixed;
 	width: 994px;
-	top:198vh;
-	right: 50vh;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 	height: 539px;
+	z-index: 9999;
 }
 .button-close{
 	position: absolute;
@@ -759,6 +782,7 @@ li{
 	color: var(--basic-backgound-white-opacity03);
 }
 .footer-menu, .social{
+	list-style: none;
 	padding: 0;
 	margin:0;
 	display: flex;
@@ -838,11 +862,17 @@ color: var(--basic-backgound-white);
 .seach-form-input:focus::placeholder{
 	opacity: 1;
 }
-.seach-form{
+.seach-form-container{
 	padding-left: 32px;
 	position: relative;
 }
-.seach-form:before{
+.seach-form:hover .seach-form-button,
+.seach-form:hover .seach-form-line,
+.seach-form-button:hover,
+.seach-form-line:hover{
+    display: inline-block;
+}
+.seach-form-container:before{
 	position: absolute;
 	content: "";
 	background: url(../img/seach.svg);
@@ -938,6 +968,7 @@ color: var(--basic-backgound-white);
 	margin-bottom: 30px;
 }
 .breadcrumbs-list{
+	list-style: none;
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -1313,6 +1344,7 @@ color: var(--basic-backgound-white);
 	flex-direction: row;
 	justify-content: space-between;
 	margin-bottom: 40px;
+	align-items: baseline;
 }
 .catalog-elements-text-description{
 	flex-basis: 75%;
@@ -1321,6 +1353,14 @@ color: var(--basic-backgound-white);
 	line-height: 22px;
 	letter-spacing: 0.05em;
 	font-family: 'gilroyextrabold', sans-serif;
+}
+a:focus > .catalog-elements-text-description{
+	opacity: 0.3;
+}
+.catalog-elements-text a{
+	margin: 0;
+	padding: 0;
+	color:var(--basic-backgound-black);
 }
 .catalog-elements-text p{
 	margin: 0;
@@ -1349,6 +1389,9 @@ color: var(--basic-backgound-white);
 }
 .paginator a{
 	color: var(--basic-backgound-black);
+}
+.paginator-list{
+	list-style: none;
 }
 .paginator-list-elements{
 	padding-top: 25px;
@@ -1404,10 +1447,11 @@ color: var(--basic-backgound-white);
 	width: 960px;
 	height: 550px;
 	background: var(--basic-backgound-white);
-	position: absolute;
-	top:198vh;
-	right: 50vh;
-	z-index: 111;
+	position: fixed;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	z-index: 9999;
 	display: none;
 	box-shadow: 0px 10px 16px var(--feedback-box-shadow);
 }
@@ -1527,4 +1571,19 @@ color: var(--basic-backgound-white);
 	border: none;
 	box-shadow:none;
 	color: rgba(0, 0, 0, 0.3);
+}
+.main-blank{
+	width: 1160px;
+	margin:0 auto;
+}
+.main-blank h1{
+	text-align: center;
+}
+.main-blank a{
+	color: var(--basic-backgound-black);
+	margin-bottom: 15px;
+	font-family: 'opensanslight', sans-serif;
+}
+.main-blank a:hover{
+	opacity: 0.5;
 }
