@@ -166,6 +166,7 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+  outline: none;
 }
 
 /**
@@ -186,6 +187,7 @@ input { /* 1 */
 button,
 select { /* 1 */
   text-transform: none;
+  cursor: pointer;
 }
 
 /**
@@ -227,7 +229,9 @@ button:-moz-focusring,
  */
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  margin: 0;
+  padding: 0;
+  border:0 none;
 }
 
 /**
