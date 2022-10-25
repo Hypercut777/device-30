@@ -48,7 +48,7 @@
 body{
 	padding: 0;
 	margin: 0;
-  	background: background: var(--basic-backgound-white);
+  	background: var(--basic-backgound-white);
 }
 a{
   	text-decoration: none;
