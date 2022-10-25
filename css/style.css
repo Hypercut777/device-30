@@ -245,7 +245,7 @@ img{
 	opacity: 0.3;
 }
 .slider-container{
-	
+
 	background: linear-gradient(to top, var(--basic-backgound-white) 76%, var(--special-yellow-light) 24%);
 	width: 1160px;
 	margin: 0 auto;
@@ -565,7 +565,7 @@ img{
 .info-slider-input:checked + .info-slider-label{
 	padding-right: 160px;
 	background: var(--basic-backgound-black);
-	color: var(--special-yellow-light);	
+	color: var(--special-yellow-light);
 	border: none;
 	box-shadow:none;
 }
@@ -613,7 +613,7 @@ img{
 }
 .partners a:hover{
 	opacity: 0.3;
-	filter: grayscale(100%); 
+	filter: grayscale(100%);
 }
 .contact-info{
 	width: 1160px;
@@ -925,7 +925,7 @@ color: var(--basic-backgound-white);
 	line-height: 20px;
 	color: var(--basic-backgound-white-opacity03);
 }
-.footer-active-1, 
+.footer-active-1,
 .footer-active-2,
 .footer-active-3{
 	padding-left: 64px;
@@ -1043,7 +1043,7 @@ color: var(--basic-backgound-white);
 	padding-bottom: 30px;
 }
 .range{
-	width: 200px; 
+	width: 200px;
 	height: 44px;
 	margin-bottom:38px;
 	position: relative;
@@ -1204,7 +1204,7 @@ color: var(--basic-backgound-white);
 	color: var(--pagnator-button-focus-text);
 	outline:none;
 }
-.filter-title h2, 
+.filter-title h2,
 .sorting-container h2{
 	font-size: 16px;
 	line-height: 20px;
@@ -1387,7 +1387,7 @@ a:focus > .catalog-elements-text-description{
 	background: var(--paginator-grey);
 	margin-bottom: 78px;
 }
-.paginator{	
+.paginator{
 	display: grid;
 	grid-template-columns: max-content 1fr max-content;
 	font-family: 'gilroyextrabold','Franklin Gothic Medium', sans-serif;
@@ -1409,7 +1409,7 @@ a:focus > .catalog-elements-text-description{
 	margin:0;
 	position: relative;
 	left:5px;
-	
+
 
 }
 .paginator-list-elements:not(:last-child){
@@ -1522,7 +1522,7 @@ a:focus > .catalog-elements-text-description{
 .feedback-form-textarea textarea:focus
 {
 	background: var(--basic-backgound-white);
-	box-shadow: 
+	box-shadow:
 	inset 2px 2px 0 var(--special-yellow-light),
 	inset -2px -2px 0 var(--special-yellow-light);
 	color:var(--basic-backgound-black);
@@ -1545,7 +1545,7 @@ a:focus > .catalog-elements-text-description{
 	font-family: 'opensanslight', 'Candara', sans-serif;
 	font-size: 14px;
 	line-height: 19px;
-	color: var(--feedback-form-text); 
+	color: var(--feedback-form-text);
 	resize:none
 }
 .feedback-form-name-input::placeholder,
